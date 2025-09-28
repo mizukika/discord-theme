@@ -9,8 +9,10 @@ A sleek Discord theme designed for **Hyprland**, featuring transparent backgroun
 - **Smooth blur effects**: Aesthetic background blurring for panels, chats, and overlays.
 - **Clean design**: Soft gradients and colors for pings, mentions, and active elements.
 
-## Screenshot
+## Screenshots
 <img width="1917" height="1198" alt="изображение" src="https://github.com/user-attachments/assets/6c89a1ad-9c1e-453b-b506-e7443f183d3f" />
+<img width="1918" height="1198" alt="изображение" src="https://github.com/user-attachments/assets/f9321a60-f351-486f-a976-94e4023cb538" />
+
 
 
 
