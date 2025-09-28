@@ -1,0 +1,135 @@
+/**
+ * @name Theme for Hyprland
+ * @author mizukika
+ * @description An ideal Discord theme designed for Hyprland.
+ * @version 1.0
+ * @invite pon
+ * @authorId 841377664992673826
+ * @website https://mizuline.vercel.app/
+ */
+
+@import url("https://refact0r.github.io/midnight-discord/build/midnight.css");
+
+/* Основные параметры */
+body {
+    --font: "figtree"; /* Стандартный шрифт */
+    --gap: 12px;
+    --divider-thickness: 4px;
+    --border-thickness: 1px;
+    --animations: on;
+    --list-item-transition: 0.2s ease;
+    --dms-icon-svg-transition: 0.4s ease;
+    --top-bar-height: var(--gap);
+    --top-bar-button-position: hide;
+    --top-bar-title-position: hide;
+    --subtle-top-bar-title: off;
+    --custom-window-controls: on;
+    --window-control-size: 14px;
+    --custom-dms-icon: custom;
+    --dms-icon-svg-url: url("https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg");
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --custom-dms-background: off;
+    --dms-background-image-url: url("");
+    --dms-background-image-size: cover;
+    --dms-background-color: rgba(0, 0, 0, 0.2); /* Мягкий полупрозрачный фон для DMS */
+    --background-image: off;
+    --background-image-url: url("");
+    --transparency-tweaks: on; /* Включаем прозрачность для лучшего эффекта */
+    --remove-bg-layer: on; /* Убираем базовый фон */
+    --panel-blur: on; /* Размытие панелей */
+    --blur-amount: 15px; /* Умеренное размытие */
+    --bg-floating: rgba(0, 0, 0, 0.6); /* Немного темнее для всплывающих панелей */
+    --custom-chatbar: aligned;
+    --chatbar-height: 47px;
+    --chatbar-padding: 8px;
+    --small-user-panel: off;
+}
+
+/* Цветовые переменные */
+:root {
+    --colors: on;
+    /* Цвета текста */
+    --text-0: #e0e0e0; /* Светлый текст на фоне */
+    --text-1: #ffffff; /* Яркий текст */
+    --text-2: #b0b0b0; /* Заголовки и важный текст */
+    --text-3: #d1d1d1; /* Обычный текст */
+    --text-4: #8c8c8c; /* Иконки и каналы */
+    --text-5: #6a6a6a; /* Подсвеченные и неактивные элементы */
+
+    /* Цвета фона */
+    --bg-1: rgba(42, 42, 42, 0.85); /* Темный фон с прозрачностью */
+    --bg-2: rgba(34, 34, 34, 0.9); /* Средний фон */
+    --bg-3: rgba(30, 30, 30, 0.7); /* Задний фон для элементов */
+    --bg-4: rgba(24, 24, 24, 0.9); /* Основной фон */
+
+    /* Эффекты при наведении */
+    --hover: rgba(255, 255, 255, 0.1); /* Прозрачный эффект при наведении */
+    --active: rgba(255, 255, 255, 0.15); /* Прозрачный эффект при активации */
+    --active-2: rgba(255, 255, 255, 0.2); /* Допол. эффект для прозрачных кнопок */
+
+    /* Цвета акцентов */
+    --accent-1: #7289da; /* Основной фиолетовый для ссылок и акцентов */
+    --accent-2: #5865f2; /* Более яркий фиолетовый для мелких акцентов */
+    --accent-3: #3f5b9e; /* Тёмный фиолетовый для кнопок */
+    --accent-4: #5b7cb7; /* Фиолетовые кнопки при наведении */
+    --accent-5: #7289da; /* Фиолетовые кнопки при нажатии */
+    --accent-new: #7289da; /* Новый акцентный цвет для уведомлений */
+
+    /* Упоминания (как в стандартном Discord) */
+    --mention: rgba(88, 101, 242, 0.2); /* Легкий фиолетовый, как у Discord */
+    --mention-hover: rgba(88, 101, 242, 0.3); /* Меньше яркости при наведении */
+
+    /* Статусы */
+    --online: #43b581; /* Статус "онлайн" - зелёный */
+    --dnd: #f04747; /* Статус "не беспокоить" - красный */
+    --idle: #faa61a; /* Статус "отсутствует" - оранжевый */
+    --streaming: #5865f2; /* Статус "стриминг" - фиолетовый */
+    --offline: #8c8c8c; /* Статус "офлайн" - серый */
+
+    /* Цвета границ */
+    --border-light: rgba(255, 255, 255, 0.05);
+    --border: rgba(255, 255, 255, 0.15);
+    --button-border: rgba(255, 255, 255, 0.1);
+
+    /* Основные цвета */
+    --green-1: rgba(130, 170, 120, 0.8); /* Легкий зелёный для фона */
+    --green-2: rgba(120, 160, 180, 0.7); /* Синие акценты */
+    --green-3: rgba(130, 170, 120, 0.7); /* Статусные индикаторы */
+    --green-4: rgba(120, 160, 180, 0.6); /* Кнопки и ссылки */
+    --green-5: rgba(130, 170, 120, 0.9); /* Яркие элементы */
+}
+
+/* Дополнительные стили для лучшего отображения */
+.discord-overlay {
+    backdrop-filter: blur(15px); /* Добавляем эффект размытия для окон */
+    background-color: rgba(0, 0, 0, 0.5); /* Затемняем фоновую область */
+}
+
+/* Применяем размытие ко всем панелям */
+.chat, .channel-header, .chatbar, .sidebar, .friend-list {
+    backdrop-filter: blur(12px); /* Легкое размытие фона панелей */
+    background-color: rgba(24, 24, 24, 0.9); /* Тёмный полупрозрачный фон для панелей */
+}
+
+/* Статусные индикаторы */
+.status-indicator-online {
+    background-color: #43b581; /* Зелёный для статуса "онлайн" */
+}
+
+.status-indicator-dnd {
+    background-color: #f04747; /* Красный для статуса "не беспокоить" */
+}
+
+.status-indicator-idle {
+    background-color: #faa61a; /* Оранжевый для статуса "отсутствует" */
+}
+
+.status-indicator-streaming {
+    background-color: #5865f2; /* Фиолетовый для статуса "стриминг" */
+}
+
+.status-indicator-offline {
+    background-color: #8c8c8c; /* Серый для статуса "офлайн" */
+}
