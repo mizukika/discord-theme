@@ -2,6 +2,8 @@
 
 A sleek Discord theme designed for **Hyprland**, featuring transparent backgrounds, smooth blur effects, and Discord's signature purple accent colors. This theme delivers a modern, immersive aesthetic with excellent readability and subtle animations, tailored for **Hyprland**-powered setups.
 
+> Note: This theme is only compatible with Hyprland. It will not work on Windows or any other compositor.
+
 ## Features
 
 - **Transparent backgrounds**: Seamlessly integrates with **Hyprland**’s compositor for stunning transparency and blur effects.
