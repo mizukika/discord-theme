@@ -34,7 +34,7 @@ git clone https://github.com/mizukika/discord-theme
 2. **Add the theme**:
    - Open Discord and go to **User Settings > Vencord > Themes**.
    - Click **Open Themes Folder** to access the themes directory.
-   - Copy the `theme.css` file from this repository into the themes folder.
+   - Copy the `hypr.theme.css` file from this repository into the themes folder.
 
 3. **Enable the theme**:
    - In **User Settings > Vencord > Themes**, click **Load Missing Themes** or enable the theme manually by toggling it on.
