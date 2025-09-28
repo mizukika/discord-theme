@@ -23,7 +23,7 @@ A sleek Discord theme designed for **Hyprland**, featuring transparent backgroun
 Download the theme or clone the repository:
 
 ```bash
-git clone https://github.com/mizukika/discord-theme
+git clone https://github.com/mizukika/hyprland-discord-theme
 ```
 
 ### 2. Apply the theme
